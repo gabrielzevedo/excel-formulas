@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-sans text-primary-900 antialiased;
+  accent-color: var(--colors-brand-500);
+}
+
+:root {
+  --colors-base-black: rgb(0, 0, 0);
+  --colors-base-transparent: rgb(255, 255, 255 / 0);
+  --colors-base-white: rgb(255, 255, 255);
+  --colors-blue-light-200: rgb(185, 230, 254);
+  --colors-blue-light-50: rgb(240, 249, 255);
+  --colors-blue-light-600: rgb(0, 134, 201);
+  --colors-brand-100: rgb(180, 196, 199);
+  --colors-brand-200: rgb(155, 177, 181);
+  --colors-brand-25: rgb(229, 235, 236);
+  --colors-brand-300: rgb(108, 140, 146);
+  --colors-brand-400: rgb(84, 122, 129);
+  --colors-brand-50: rgb(204, 216, 218);
+  --colors-brand-500: rgb(36, 88, 96);
+  --colors-brand-600: rgb(0, 76, 86);
+  --colors-brand-700: rgb(1, 71, 80);
+  --colors-brand-800: rgb(1, 61, 68);
+  --colors-brand-900: rgb(1, 50, 57);
+  --colors-brand-950: rgb(0, 40, 46);
+  --colors-brand-gray: rgb(77, 77, 77);
+  --colors-brand-yellow: rgb(241, 196, 0);
+  --colors-error-100: rgb(254, 228, 226);
+  --colors-error-200: rgb(254, 205, 202);
+  --colors-error-25: rgb(255, 251, 250);
+  --colors-error-300: rgb(253, 162, 155);
+  --colors-error-400: rgb(249, 112, 102);
+  --colors-error-50: rgb(254, 243, 242);
+  --colors-error-500: rgb(240, 68, 56);
+  --colors-error-600: rgb(217, 45, 32);
+  --colors-error-700: rgb(180, 35, 24);
+  --colors-error-800: rgb(145, 32, 24);
+  --colors-error-900: rgb(122, 39, 26);
+  --colors-error-950: rgb(85, 22, 12);
+  --colors-gray-light-mode-100: rgb(242, 244, 247);
+  --colors-gray-light-mode-200: rgb(234, 236, 240);
+  --colors-gray-light-mode-25: rgb(252, 252, 253);
+  --colors-gray-light-mode-300: rgb(208, 213, 221);
+  --colors-gray-light-mode-400: rgb(152, 162, 179);
+  --colors-gray-light-mode-50: rgb(249, 250, 251);
+  --colors-gray-light-mode-500: rgb(102, 112, 133);
+  --colors-gray-light-mode-600: rgb(71, 84, 103);
+  --colors-gray-light-mode-700: rgb(52, 64, 84);
+  --colors-gray-light-mode-800: rgb(24, 34, 48);
+  --colors-gray-light-mode-900: rgb(16, 24, 40);
+  --colors-gray-light-mode-950: rgb(12, 17, 29);
+  --colors-success-100: rgb(220, 250, 230);
+  --colors-success-200: rgb(171, 239, 198);
+  --colors-success-25: rgb(246, 254, 249);
+  --colors-success-300: rgb(117, 224, 167);
+  --colors-success-400: rgb(71, 205, 137);
+  --colors-success-50: rgb(236, 253, 243);
+  --colors-success-500: rgb(23, 178, 106);
+  --colors-success-600: rgb(7, 148, 85);
+  --colors-success-700: rgb(6, 118, 71);
+  --colors-success-800: rgb(8, 93, 58);
+  --colors-success-900: rgb(7, 77, 49);
+  --colors-success-950: rgb(5, 51, 33);
+  --colors-warning-100: rgb(254, 240, 199);
+  --colors-warning-200: rgb(254, 223, 137);
+  --colors-warning-25: rgb(255, 252, 245);
+  --colors-warning-300: rgb(254, 200, 75);
+  --colors-warning-400: rgb(253, 176, 34);
+  --colors-warning-50: rgb(255, 250, 235);
+  --colors-warning-500: rgb(247, 144, 9);
+  --colors-warning-600: rgb(220, 104, 3);
+  --colors-warning-700: rgb(181, 71, 8);
+  --colors-warning-800: rgb(147, 55, 13);
+  --colors-warning-900: rgb(122, 46, 14);
+  --colors-warning-950: rgb(78, 29, 9);
+}
