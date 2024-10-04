@@ -25,10 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable}`}>
-      <body>
-        <main>
-          <TooltipProvider>{children}</TooltipProvider>
-        </main>
+      <body className="bg-header bg-brand-50/20 bg-top bg-no-repeat">
+        <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
   )

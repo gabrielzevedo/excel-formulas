@@ -123,6 +123,9 @@ const config = {
     },
     fontFamily: {
       sans: ['var(--font-inter)']
+    },
+    backgroundImage: {
+      header: "url('/img/header-bg.svg')"
     }
   },
   animation: {
