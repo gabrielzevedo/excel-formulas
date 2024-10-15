@@ -4,29 +4,12 @@ const config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}'
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/pages/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       colors: {
-        // primary: '#101828',
-        // secondary: '#344054',
-        // tertiary: '#475467',
-        // quaternary: '#667085',
-        // gray: {
-        //   25: '#fcfcfd',
-        //   50: '#f9fafb',
-        //   100: '#f2f4f7',
-        //   200: '#eaecf0',
-        //   300: '#d0d5dd',
-        //   400: '#98a2b3',
-        //   500: '#667085',
-        //   600: '#475467',
-        //   700: '#344054',
-        //   800: '#182230',
-        //   900: '#101828',
-        //   950: '#0c111d'
-        // },
         brand: {
           25: '#e5ebec',
           50: '#ccd8da',
@@ -43,7 +26,6 @@ const config = {
           yellow: '#F1C400'
         }
       },
-      // colors: {
       backgroundColor: {
         active: 'var(--colors-gray-light-mode-50)',
         'brand-primary': 'var(--colors-brand-50)',
@@ -123,9 +105,6 @@ const config = {
     },
     fontFamily: {
       sans: ['var(--font-inter)']
-    },
-    backgroundImage: {
-      header: "url('/img/header-bg.svg')"
     }
   },
   animation: {

@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable}`}>
-      <body className="bg-header bg-brand-50/20 bg-top bg-no-repeat">
+      <body className="bg-brand-50/20 bg-[url('/img/header-bg.svg')] bg-top bg-no-repeat">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
