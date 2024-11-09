@@ -1,3 +1,4 @@
 export const URLS = {
-  home: '/'
+  home: '/',
+  formula: '/formula/'
 }

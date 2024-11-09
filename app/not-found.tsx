@@ -6,7 +6,7 @@ import { URLS } from '@/constants/routes'
 
 export default function NotFound() {
   return (
-    <div className="flex h-screen flex-col items-start justify-center gap-4 px-4 sm:px-14">
+    <div className="flex h-screen flex-col items-center justify-center gap-4 px-4 sm:px-14">
       <p className="text-base font-semibold text-brand-secondary-700">
         Erro 404
       </p>
@@ -16,7 +16,7 @@ export default function NotFound() {
       <p className="text-sm text-tertiary-600 sm:text-xl">
         Desculpe, a página que está tentando acessar não existe ou foi movida.
       </p>
-      <div className="mt-10 flex w-full flex-col-reverse gap-3 sm:flex-row">
+      <div className="mt-10 flex w-full flex-col-reverse justify-center gap-3 sm:flex-row">
         <BackButton />
         <Button
           variant="primary"

@@ -1,10 +1,9 @@
-'use client'
-
+import Container from '@/components/Container'
 import CardPopular from '@/components/pages/home/CardPopular'
 
 const Index = () => {
   return (
-    <>
+    <Container>
       <header className="m-3 mx-auto mt-10 max-w-screen-xl">
         <h1>
           <img
@@ -15,7 +14,7 @@ const Index = () => {
         </h1>
       </header>
       <section className="mt-32 text-center">
-        <h2 className="mx-auto w-full max-w-2xl text-6xl font-semibold leading-tight">
+        <h2 className="mx-auto w-full max-w-2xl text-4xl font-semibold leading-tight lg:text-6xl">
           Encontre{' '}
           <span className="border-4 border-emerald-700 px-4 font-bold text-brand-500">
             fórmulas
@@ -34,14 +33,14 @@ const Index = () => {
         <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-brand-300">
           Fórmulas populares
         </h3>
-        <div className="mt-8 flex gap-5">
-          <CardPopular title="Somar" link="" />
-          <CardPopular title="Subtrair" link="" />
-          <CardPopular title="Dividir" link="" />
-          <CardPopular title="Multiplicar" link="" />
+        <div className="mt-8 grid grid-cols-2 gap-5 lg:grid-cols-4">
+          <CardPopular title="Somar" link="soma" />
+          <CardPopular title="Subtrair" link="subtracao" />
+          <CardPopular title="Dividir" link="divisao" />
+          <CardPopular title="Multiplicar" link="multiplicacao" />
         </div>
       </section>
-    </>
+    </Container>
   )
 }
 
