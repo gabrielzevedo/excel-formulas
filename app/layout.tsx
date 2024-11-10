@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 import { TooltipProvider } from '@/components/ui/Tooltip'
 import { PAGE_TITLE } from '@/constants/common'
@@ -26,6 +27,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.variable}`}>
       <body className="bg-brand-50/20 bg-[url('/img/header-bg.svg')] bg-top bg-no-repeat">
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8311294041504798"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
