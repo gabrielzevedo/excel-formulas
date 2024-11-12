@@ -3,6 +3,7 @@
 const localStorageSavedFormulasKey = 'savedFormulas'
 
 export const getSavedFormulas = (): string[] => {
+  if (typeof window === 'undefined') return []
   const savedFormulas = localStorage.getItem(localStorageSavedFormulasKey)
   return savedFormulas ? JSON.parse(savedFormulas) : []
 }
@@ -13,6 +14,7 @@ export const hasSavedFormula = (id: string) => {
 }
 
 export const saveFormula = (id: string) => {
+  if (typeof window === 'undefined') return false
   const savedFormulas = getSavedFormulas()
   const newSavedFormulas = [...savedFormulas, id]
   localStorage.setItem(
@@ -22,6 +24,7 @@ export const saveFormula = (id: string) => {
 }
 
 export const removeFormula = (id: string) => {
+  if (typeof window === 'undefined') return false
   const savedFormulas = getSavedFormulas()
   const newSavedFormulas = savedFormulas.filter(
     (formula: string) => formula !== id
