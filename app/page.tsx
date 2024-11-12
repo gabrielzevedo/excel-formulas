@@ -33,11 +33,9 @@ const Index = () => {
         <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-brand-300">
           Fórmulas populares
         </h3>
-        <div className="mt-8 grid grid-cols-2 gap-5 lg:grid-cols-4">
-          <CardPopular title="Somar" link="soma" />
-          <CardPopular title="Subtrair" link="subtracao" />
-          <CardPopular title="Dividir" link="divisao" />
-          <CardPopular title="Multiplicar" link="multiplicacao" />
+        <div className="mt-8 flex justify-center gap-5">
+          <CardPopular title="Somar" id="soma" />
+          <CardPopular title="Média" id="media" />
         </div>
       </section>
     </Container>
