@@ -1,6 +1,9 @@
+import { IFormula } from '@/interfaces/formulas'
+
 export const FORMULAS_LANG = ['pt', 'en']
-export const FORMULAS = {
+export const FORMULAS: IFormula = {
   soma: {
+    id: 'soma',
     name: 'Soma',
     description: 'Soma os números de um intervalo.',
     prefixPt: 'SOMA',
@@ -15,6 +18,7 @@ export const FORMULAS = {
     ]
   },
   media: {
+    id: 'media',
     name: 'Média',
     description: 'Calcula a média aritmética dos números de um intervalo.',
     prefixPt: 'MÉDIA',

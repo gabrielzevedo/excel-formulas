@@ -22,11 +22,10 @@ const Save = ({ id }: SaveProps) => {
   return (
     <Button
       variant={isSaved ? 'secondaryGray' : 'secondaryColor'}
-      icon="Star01"
-      className="w-full sm:w-auto"
+      icon="HeartRounded"
       onClick={handleSave}
     >
-      {isSaved ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}
+      {isSaved ? 'Remover' : 'Salvar'}
     </Button>
   )
 }

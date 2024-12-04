@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { URLS } from '@/constants/routes'
 
-import CardStar from './CardStar'
+import CardSaved from './CardSaved'
 
 interface CardPopularProps {
   title: string
@@ -17,7 +17,7 @@ const CardPopular = ({ title, subtitle, id }: CardPopularProps) => {
       className="relative flex h-32 w-full flex-col items-center justify-center rounded-3xl bg-white p-3 text-center font-semibold text-brand-600 shadow-xl shadow-emerald-700/10 transition-all hover:shadow-2xl hover:shadow-emerald-700/30"
     >
       <div className="absolute right-4 top-4">
-        <CardStar id={id} />
+        <CardSaved id={id} />
       </div>
       <p>{title}</p>
       {subtitle ? (

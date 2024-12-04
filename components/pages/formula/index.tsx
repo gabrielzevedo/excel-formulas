@@ -41,7 +41,7 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
         </h1>
       </header>
       <section className="mx-auto mt-32 w-full max-w-2xl text-center">
-        <h2 className="text-6xl font-semibold leading-tight">
+        <h2 className="text-4xl font-semibold leading-tight lg:text-6xl">
           Fórmula
           <span className="ml-2 font-bold text-brand-500">{name}</span>
         </h2>
@@ -61,7 +61,9 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
       </section>
       <section>
         <div className="mx-auto mt-28 w-full max-w-2xl">
-          <h3 className="text-4xl font-semibold leading-tight">Exemplo</h3>
+          <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
+            Exemplo
+          </h3>
           <div className="mt-2 flex flex-col items-center justify-between gap-2 rounded-md bg-white p-4 text-brand-500 shadow sm:flex-row">
             <pre>{replacePrefix(example)}</pre>
             <Copy data={replacePrefix(example)} />
@@ -70,13 +72,15 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
       </section>
       <section>
         <div className="mx-auto mt-20 w-full max-w-2xl">
-          <h3 className="text-4xl font-semibold leading-tight">Quando usar</h3>
+          <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
+            Quando usar
+          </h3>
           <p className="mt-2">{whenUse}</p>
         </div>
       </section>
       <section>
         <div className="mx-auto mb-10 mt-20 w-full max-w-2xl">
-          <h3 className="text-4xl font-semibold leading-tight">
+          <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
             Passo a passo
           </h3>
           <ol className="mt-2 list-inside list-decimal">

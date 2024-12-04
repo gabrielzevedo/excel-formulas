@@ -1,5 +1,6 @@
 import Container from '@/components/Container'
 import CardPopular from '@/components/pages/home/CardPopular'
+import Search from '@/components/pages/home/Search'
 
 const Index = () => {
   return (
@@ -22,12 +23,7 @@ const Index = () => {
           <br />
           <span className="font-bold text-brand-500">do Excel</span> rapidamente
         </h2>
-        <input
-          type="search"
-          name="search"
-          placeholder="Pesquise"
-          className="mt-20 w-full max-w-screen-sm rounded-full px-8 py-5 font-semibold shadow-lg shadow-black/5"
-        />
+        <Search />
       </section>
       <section className="mx-auto mt-20 w-full max-w-screen-sm">
         <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-brand-300">
