@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable}`}>
-      <body className="bg-brand-50/20 bg-[url('/img/header-bg.svg')] bg-top bg-no-repeat">
+      <body className="bg-brand-50/20 bg-[url('/img/header-bg.svg')] bg-cover bg-top bg-no-repeat">
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8311294041504798"

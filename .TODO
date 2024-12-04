@@ -3,8 +3,6 @@
 - [] Description
 - [] Keywords
 
-
-- [] Selecionar idioma do programa para variar formula (sum ou soma)
-
-
-- [] Favoritar fórmulas e exibir na home
+- [x] Selecionar idioma do programa para variar formula (sum ou soma)
+- [x] Favoritar fórmulas e exibir na home
+- [] Dark mode

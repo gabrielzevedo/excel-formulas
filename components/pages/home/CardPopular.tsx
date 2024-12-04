@@ -21,7 +21,7 @@ const CardPopular = ({ title, subtitle, id }: CardPopularProps) => {
       </div>
       <p>{title}</p>
       {subtitle ? (
-        <p className="mt-2 font-normal text-brand-300">{subtitle}</p>
+        <p className="font-normal text-brand-300">{subtitle}</p>
       ) : null}
     </Link>
   )

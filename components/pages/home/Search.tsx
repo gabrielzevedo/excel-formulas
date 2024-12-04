@@ -39,7 +39,7 @@ const Search = () => {
       shouldFilter={false}
       loop
       className={cn(
-        'mx-auto mt-20 w-full max-w-screen-sm shadow-lg shadow-black/5 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brand-600/20',
+        'mx-auto mt-10 w-full max-w-screen-sm shadow-lg shadow-black/5 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brand-600/20 lg:mt-20',
         value ? 'rounded-3xl' : 'rounded-full'
       )}
     >

@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import Container from '@/components/Container'
 import Copy from '@/components/Copy'
+import Header from '@/components/Header'
 import Save from '@/components/Save'
 import { Button } from '@/components/ui/Button'
 import { FORMULAS } from '@/constants/formulas'
@@ -24,23 +25,15 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
   } = FORMULAS[formula]
 
   const prefix = lang === 'en' ? prefixEn : prefixPt
-  const replacePrefix = (text: string) => text.replace('{PREFIX}', prefix)
+  const boolFalse = lang === 'en' ? 'FALSE' : 'FALSO'
+  const replacePrefix = (text: string) =>
+    text.replace('{PREFIX}', prefix).replace('{FALSE}', boolFalse)
   const langOpposite = lang === 'en' ? 'pt' : 'en'
 
   return (
     <Container>
-      <header className="m-3 mx-auto mt-10 max-w-screen-xl">
-        <h1>
-          <a href="/">
-            <img
-              src="/img/excel-formulas.png"
-              alt="Excel Formulas"
-              className="mx-auto h-14"
-            />
-          </a>
-        </h1>
-      </header>
-      <section className="mx-auto mt-32 w-full max-w-2xl text-center">
+      <Header />
+      <section className="mx-auto mt-10 w-full max-w-2xl text-center lg:mt-32">
         <h2 className="text-4xl font-semibold leading-tight lg:text-6xl">
           Fórmula
           <span className="ml-2 font-bold text-brand-500">{name}</span>
@@ -60,18 +53,20 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
         </div>
       </section>
       <section>
-        <div className="mx-auto mt-28 w-full max-w-2xl">
+        <div className="mx-auto mt-12 w-full max-w-2xl lg:mt-28">
           <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
             Exemplo
           </h3>
           <div className="mt-2 flex flex-col items-center justify-between gap-2 rounded-md bg-white p-4 text-brand-500 shadow sm:flex-row">
-            <pre>{replacePrefix(example)}</pre>
+            <span className="break-words font-mono">
+              {replacePrefix(example)}
+            </span>
             <Copy data={replacePrefix(example)} />
           </div>
         </div>
       </section>
       <section>
-        <div className="mx-auto mt-20 w-full max-w-2xl">
+        <div className="mx-auto mt-10 w-full max-w-2xl lg:mt-20">
           <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
             Quando usar
           </h3>
@@ -79,7 +74,7 @@ const Formula = ({ formula, lang = 'pt' }: FormulaProps) => {
         </div>
       </section>
       <section>
-        <div className="mx-auto mb-10 mt-20 w-full max-w-2xl">
+        <div className="mx-auto my-10 w-full max-w-2xl lg:mt-20">
           <h3 className="text-2xl font-semibold leading-tight lg:text-4xl">
             Passo a passo
           </h3>

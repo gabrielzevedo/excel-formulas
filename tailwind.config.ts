@@ -77,6 +77,9 @@ const config = {
         secondary: 'var(--colors-gray-light-mode-200)',
         tertiary: 'var(--colors-gray-light-mode-100)'
       },
+      fontFamily: {
+        sans: ['var(--font-inter)']
+      },
       textColor: {
         'brand-primary-900': 'var(--colors-brand-900)',
         'brand-secondary-700': 'var(--colors-brand-700)',
@@ -102,9 +105,6 @@ const config = {
         'warning-primary-600': 'var(--colors-warning-600)',
         white: 'var(--colors-base-white)'
       }
-    },
-    fontFamily: {
-      sans: ['var(--font-inter)']
     }
   },
   animation: {
